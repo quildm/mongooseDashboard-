@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Index</title>
+</head>
+<body>
+  <h1>Index Page!</h1>
+  <a href="/">Create new dog</a>
+  <!-- Display all dogs -->
+  <% for (idx in dog) { %>
+    <h3>Name: <%= dog[idx].name %></h3>
+    <h3>Weight: <%= dog[idx].weight %></h3>
+    <h4>Color: <%= dog[idx].color %></h4>
+  <% } %>
+</body>
+</html>
